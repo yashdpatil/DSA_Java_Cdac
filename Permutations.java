@@ -16,7 +16,13 @@ public class permutations {
 
     }
 }
-
+@
+                                    ABC
+    J = 0                            J=1                                                J=2
+    A|BC                            B|AC                                                C|AB
+ J=1   J=2                J=1              J=2                                    J=1         J=2
+AB|C   AC|B             BA|C             BC|A                                    CA|B       CB|A
+ABC    ACB              BAC              BCA                                     CAB        CBA
 
 Output
 ABC
