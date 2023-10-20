@@ -16,7 +16,7 @@ public class permutations {
 
     }
 }
-@
+
                                     ABC
     J = 0                            J=1                                                J=2
     A|BC                            B|AC                                                C|AB
