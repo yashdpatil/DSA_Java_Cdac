@@ -40,8 +40,8 @@ public class Binary_Tree{
 			if(root==null)
 				return;
 			System.out.println(" ");
-			PrintInorder(root.Right);
-			PrintInorder(root.Left);
+			PrintInorder(root.left);
+			PrintInorder(root.right);
 			System.out.print(root.Data+" ");
 			}
 			
