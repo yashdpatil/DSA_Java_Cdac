@@ -31,6 +31,8 @@ public class Main
             if (front > rear) {
                 front = -1;
                 rear = -1;
+		    It then checks if front >= rear, which is true in this case because front is 0 and rear is 1.
+Since there is only one element left in the queue after dequeuing, front and rear are reset to -1
             }
             return true;
         } else {
