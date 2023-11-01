@@ -6,7 +6,7 @@ class Parenthesis{
 			int top =-1;
 			for(char c :s.toCharArray()){
 				System.out.println(c);
-				if (c == '(' || c == '{' || c == '[' ){ //||c == ')' || c == '}' || c == ']'
+				if (c == '(' || c == '{' || c == '[' )'
 					str[++top]=c;
 				}else if(c == '}' && top >=0 && str[top]=='{'){
 					top--;
