@@ -72,6 +72,34 @@ class Solution {
 }
 
 
+3 rd Approch
+
+
+	class Solution {
+    public boolean isValid(String s) {
+         Stack<Character> stack = new Stack<>();
+
+        for (char x : s.toCharArray()) {
+            if(x == '{' || x=='(' || x == '['){
+                stack.add(x);
+            }else{
+                if(stack.isEmpty()) return false;
+                if(x =='}'&& stack.peek()!='{') return false;
+                if(x ==']'&& stack.peek()!='[') return false;
+                if(x ==')'&& stack.peek()!='(') return false;
+
+                stack.pop();
+            }
+
+        }
+
+
+        return stack.isEmpty();
+        
+    }
+}
+
+
 /*
 Check Condition {{}} valid
 	{{}} invalid
